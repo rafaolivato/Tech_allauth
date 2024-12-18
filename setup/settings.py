@@ -27,6 +27,10 @@ SECRET_KEY = 'django-insecure-!ns+kzzmx0d47(un!x62drb_4@c=**4p3dnfd%)-c&=c(kgbw&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# Está 1 porque é ambiente de desenvolvimento, depois precisa colocar o domínio do site.
+
+SITE_ID = 1
+
 ALLOWED_HOSTS = []
 
 
@@ -66,8 +70,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',
-
+    'allauth.account.middleware.AccountMiddleware', 
+    
 ]
 
 ROOT_URLCONF = 'setup.urls'
@@ -151,8 +155,8 @@ SOCIALACCOUNT_PROVIDERS = {
     'github': {
         
         'APP': {
-            'client_id': '123',
-            'secret': '456',
+            'client_id': 'Ov23liQxqWwtfbMyefiB',
+            'secret': 'd8b7e13e8b6c0d07414bbd757c36c4e4a1a3ac02',
             'key': ''
         }
     }
